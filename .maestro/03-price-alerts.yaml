@@ -1,0 +1,18 @@
+appId: host.exp.exponent
+---
+# Fluxo E2E 03: Tela de Alertas de Preço
+# Valida a visualização da tela de alertas, criação de um novo alerta com formulário e confirmação na listagem
+
+- launchApp
+- tapOn: "Alerts"
+- assertVisible: "Price Alerts"
+- tapOn: "New Alert"
+- assertVisible: "Create Alert"
+- assertVisible: "Target Price (USD)"
+- tapOn:
+    placeholder: "0.00"
+- inputText: "70000"
+- hideKeyboard
+- tapOn: "Save Alert"
+- assertVisible: "Price Alerts"
+- assertVisible: "70,000.00"

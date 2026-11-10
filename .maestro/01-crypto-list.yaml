@@ -1,0 +1,11 @@
+appId: host.exp.exponent
+---
+# Fluxo E2E 01: Listagem de Criptomoedas
+# Valida a exibição do cabeçalho da lista e a presença dos ativos principais (Bitcoin, Ethereum, etc.)
+
+- launchApp
+- assertVisible: "Cryptocurrencies"
+- assertVisible: "Bitcoin"
+- assertVisible: "BTC"
+- assertVisible: "Ethereum"
+- assertVisible: "ETH"

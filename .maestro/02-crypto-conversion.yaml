@@ -1,0 +1,16 @@
+appId: host.exp.exponent
+---
+# Fluxo E2E 02: Tela de Conversão de Criptomoedas
+# Valida a navegação para a tela de conversão, input de valor e cálculo do resultado convertido
+
+- launchApp
+- tapOn: "Convert"
+- assertVisible: "Convert Crypto"
+- assertVisible: "Amount"
+- assertVisible: "Cryptocurrency"
+- assertVisible: "Fiat Currency"
+- tapOn:
+    placeholder: "0.00"
+- inputText: "1"
+- hideKeyboard
+- assertVisible: "Converted Amount"

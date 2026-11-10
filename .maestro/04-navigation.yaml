@@ -1,0 +1,13 @@
+appId: host.exp.exponent
+---
+# Fluxo E2E 04: Navegação entre as Funcionalidades
+# Valida a alternância de abas da barra inferior (List -> Convert -> Alerts -> List)
+
+- launchApp
+- assertVisible: "Cryptocurrencies"
+- tapOn: "Convert"
+- assertVisible: "Convert Crypto"
+- tapOn: "Alerts"
+- assertVisible: "Price Alerts"
+- tapOn: "List"
+- assertVisible: "Cryptocurrencies"
