@@ -9,8 +9,7 @@ appId: host.exp.exponent
 - tapOn: "New Alert"
 - assertVisible: "Create Alert"
 - assertVisible: "Target Price (USD)"
-- tapOn:
-    placeholder: "0.00"
+- tapOn: "0.00"
 - inputText: "70000"
 - hideKeyboard
 - tapOn: "Save Alert"
